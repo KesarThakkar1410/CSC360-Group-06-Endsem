@@ -39,6 +39,6 @@ The optional `param` is the clip percentage for `stretch` (default 1) and the ga
 ## How it works
 
 1. Load the image and convert it to 8-bit grayscale.
-2. Build a 256-entry lookup table for the chosen method.
+2. Build a 256 entry lookup table for the chosen method.
 3. Replace every pixel with its value from the table.
 4. Save the result as a PNG.
