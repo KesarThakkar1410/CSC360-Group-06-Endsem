@@ -4,7 +4,7 @@ A small Java project that makes a picture easier to see by improving its contras
 It was made for the CSC360 end-semester work (Group 6).
 
 ## What is the problem?
-
+**Create a filter to improve the contrast of a grayscale image**
 Some pictures look dull or foggy. All the shades are close together, so dark parts
 and bright parts do not stand out. A photo taken in poor light is a common example.
 
@@ -20,16 +20,6 @@ It takes a picture and does three things:
 
 The result is a clearer picture with stronger contrast, saved as a PNG file.
 This idea is called **contrast stretching**.
-
-## The three programs
-
-The project gives you the same idea in three forms:
-
-| Program | What it is |
-| --- | --- |
-| `contrastfilter` | A command-line tool. You give it an input picture and an output name, and it saves the improved picture. It has no window. |
-| `contrastgui` | A simple window. You pick a picture, see the original and the improved version side by side, and save the result. |
-| `contrastslider` | A window like `contrastgui`, with a **strength** slider from 0 to 100. At 0 you see the plain gray picture, at 100 you see the full effect, and in between you see a mix. |
 
 ## Screenshots
 
@@ -53,6 +43,16 @@ and the brightest parts are close to white.
 
 
 <img width="1366" height="768" alt="Contrast slider window at strength 100, showing a flower picture before and after" src="https://github.com/user-attachments/assets/d3c6dcf9-f46e-43cb-bbde-500a48ad970b" />
+
+## The three programs
+
+The project gives you the same idea in three forms:
+
+| Program | What it is |
+| --- | --- |
+| `contrastfilter` | A command-line tool. You give it an input picture and an output name, and it saves the improved picture. It has no window. |
+| `contrastgui` | A simple window. You pick a picture, see the original and the improved version side by side, and save the result. |
+| `contrastslider` | A window like `contrastgui`, with a **strength** slider from 0 to 100. At 0 you see the plain gray picture, at 100 you see the full effect, and in between you see a mix. |
 
 ## What is in this repo
 
