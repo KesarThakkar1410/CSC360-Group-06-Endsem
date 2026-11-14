@@ -1,44 +1,75 @@
-# Grayscale Contrast Enhancement Filter
+# Grayscale Contrast Filter
 
-A Java program that improves the contrast of a grayscale image. It supports three methods:
+A small Java project that makes a picture easier to see by improving its contrast.
+It was made for the CSC360 end-semester work (Group 6).
 
-- **Contrast stretching** (`stretch`): stretches the used gray range to fill 0 to 255.
-- **Histogram equalization** (`equalize`): spreads gray levels evenly using the histogram.
-- **Gamma correction** (`gamma`): brightens or darkens using a power curve.
+## What is the problem?
 
-If the input image is in color, it is converted to grayscale first.
+Some pictures look dull or foggy. All the shades are close together, so dark parts
+and bright parts do not stand out. A photo taken in poor light is a common example.
 
-## Requirements
+## What does this project do?
 
-JDK 8 or newer
+It takes a picture and does three things:
 
-## How to run
+1. It changes the picture into shades of gray. Colour pictures are fine; the colour
+   is simply removed.
+2. It finds the darkest spot and the brightest spot in the picture.
+3. It spreads all the shades out, so the darkest spot becomes pure black and the
+   brightest spot becomes pure white.
 
-Compile:
+The result is a clearer picture with stronger contrast, saved as a PNG file.
+This idea is called **contrast stretching**.
 
-```bash
-javac -d out src/contrast/ContrastFilter.java
+## The three programs
+
+The project gives you the same idea in three forms:
+
+| Program | What it is |
+| --- | --- |
+| `contrastfilter` | A command-line tool. You give it an input picture and an output name, and it saves the improved picture. It has no window. |
+| `contrastgui` | A simple window. You pick a picture, see the original and the improved version side by side, and save the result. |
+| `contrastslider` | A window like `contrastgui`, with a **strength** slider from 0 to 100. At 0 you see the plain gray picture, at 100 you see the full effect, and in between you see a mix. |
+
+## Screenshots
+
+These are from the `contrastslider` window.
+
+**When it first opens.** Nothing is loaded yet.
+
+<!-- SCREENSHOT 1: drag "image.png" (empty window) onto this line, then delete this line -->
+
+**Strength 50.** The picture on the right has more contrast than the original on the
+left, but it is only a half-way mix.
+
+<!-- SCREENSHOT 2: drag the strength 50 screenshot onto this line, then delete this line -->
+
+**Strength 100.** This is the full effect. The darkest parts are now close to black
+and the brightest parts are close to white.
+
+<!-- SCREENSHOT 3: drag the strength 100 screenshot onto this line, then delete this line -->
+
+## What is in this repo
+
+```
+CSC360-Group-06-Endsem/
+├── readme.md                     <- this file: what the project is
+├── JAVA_DOCUMENTATION.md         <- how to run it, and how the code works
+├── ContrastFilterTest.java       <- a JUnit test
+└── contrastfilter/
+    ├── contrastfilter.java       <- command-line tool
+    ├── contrastgui.java          <- simple window
+    └── contrastslider.java       <- window with a slider
 ```
 
-Run:
+## Built with
 
-```bash
-java -cp out contrast.ContrastFilter <input> <output.png> [stretch|equalize|gamma] [param]
-```
+- **Java**, with no extra libraries for the main programs.
+- **Java Swing** for the two windows.
+- **`ImageIO`** (part of Java) for reading and saving pictures.
+- **JUnit 5** for the test.
 
-Examples:
+## Learn more
 
-```bash
-java -cp out contrast.ContrastFilter input.jpg output.png stretch
-java -cp out contrast.ContrastFilter input.jpg output.png equalize
-java -cp out contrast.ContrastFilter input.jpg output.png gamma 0.6
-```
-
-The optional `param` is the clip percentage for `stretch` (default 1) and the gamma value for `gamma` (default 0.6).
-
-## How it works
-
-1. Load the image and convert it to 8-bit grayscale.
-2. Build a 256-entry lookup table for the chosen method.
-3. Replace every pixel with its value from the table.
-4. Save the result as a PNG.
+To compile and run the programs, and to see how every class and method works, read
+[JAVA_DOCUMENTATION.md](JAVA_DOCUMENTATION.md).
