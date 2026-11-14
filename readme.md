@@ -5,6 +5,7 @@ It was made for the CSC360 end-semester work (Group 6).
 
 ## What is the problem?
 **Create a filter to improve the contrast of a grayscale image**
+
 Some pictures look dull or foggy. All the shades are close together, so dark parts
 and bright parts do not stand out. A photo taken in poor light is a common example.
 
