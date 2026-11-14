@@ -68,8 +68,3 @@ CSC360-Group-06-Endsem/
 - **Java Swing** for the two windows.
 - **`ImageIO`** (part of Java) for reading and saving pictures.
 - **JUnit 5** for the test.
-
-## Learn more
-
-To compile and run the programs, and to see how every class and method works, read
-[JAVA_DOCUMENTATION.md](JAVA_DOCUMENTATION.md).
