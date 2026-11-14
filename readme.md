@@ -60,7 +60,6 @@ The project gives you the same idea in three forms:
 ```
 CSC360-Group-06-Endsem/
 ├── readme.md                     <- this file: what the project is
-├── JAVA_DOCUMENTATION.md         <- how to run it, and how the code works
 ├── ContrastFilterTest.java       <- a JUnit test
 └── contrastfilter/
     ├── contrastfilter.java       <- command-line tool
