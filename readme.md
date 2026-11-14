@@ -37,17 +37,22 @@ These are from the `contrastslider` window.
 
 **When it first opens.** Nothing is loaded yet.
 
-<!-- SCREENSHOT 1: drag "image.png" (empty window) onto this line, then delete this line -->
+
+<img width="1366" height="768" alt="Contrast slider window when it first opens" src="https://github.com/user-attachments/assets/b03cefbe-ccc6-4d0b-91f5-2db795e3f97e" />
+
 
 **Strength 50.** The picture on the right has more contrast than the original on the
 left, but it is only a half-way mix.
 
-<!-- SCREENSHOT 2: drag the strength 50 screenshot onto this line, then delete this line -->
+
+<img width="1366" height="768" alt="Contrast slider window at strength 50, showing a flower picture before and after" src="https://github.com/user-attachments/assets/b2dc085e-4837-4191-b249-d621512ef679" />
+
 
 **Strength 100.** This is the full effect. The darkest parts are now close to black
 and the brightest parts are close to white.
 
-<!-- SCREENSHOT 3: drag the strength 100 screenshot onto this line, then delete this line -->
+
+<img width="1366" height="768" alt="Contrast slider window at strength 100, showing a flower picture before and after" src="https://github.com/user-attachments/assets/d3c6dcf9-f46e-43cb-bbde-500a48ad970b" />
 
 ## What is in this repo
 
