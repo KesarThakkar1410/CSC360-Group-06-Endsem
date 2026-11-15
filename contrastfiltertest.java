@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 // This class contains a test for the contrast filter.
-public class ContrastFilterTest {
+public class contrastfiltertest {
 
     // This test checks whether a contrast filter object can be created.
     @Test
