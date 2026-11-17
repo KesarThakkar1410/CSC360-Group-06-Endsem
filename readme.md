@@ -32,7 +32,7 @@ and the brightest parts are close to white.
 
 <img width="1366" height="768" alt="Contrast slider window at strength 100, showing a flower picture before and after" src="https://github.com/user-attachments/assets/d3c6dcf9-f46e-43cb-bbde-500a48ad970b" />
 
-## What does this project do?
+## What does this project do??
 
 It takes a picture and does three things:
 
